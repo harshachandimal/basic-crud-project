@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class PostController extends Controller
 {
-    public function showPostCreateForm(){
-        return view('index');
+    public function showPostCreateForm(): View
+    {
+        return view('post.postForm');
     }
 }
